@@ -11,21 +11,30 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="61dp"
+        android:layout_marginTop="12dp"
         android:hint="Please enter the name of store"></EditText>
 
-    <android.support.v7.widget.AppCompatSpinner
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/Storename"
-        android:layout_marginTop="76dp"
+        android:layout_marginTop="19dp"
+        android:text="@string/txtChoose"
+        android:id="@+id/textView" />
+
+    <ListView
         android:id="@+id/Brands"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
 
-        >
+        android:layout_marginTop="12dp"
+        android:entries="@array/brands">
 
 
-    </android.support.v7.widget.AppCompatSpinner>
+    </ListView>
         />
 
     <Button

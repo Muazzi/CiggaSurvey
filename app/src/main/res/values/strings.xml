@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">SurveyCigga</string>
+    <string name="txtChoose">Please choose brands of ciggarettes  in  dropdownlist below:</string>
+    <string-array name="brands">
+        <item>Peter Stuyvesant Red</item>
+        <item>Peter Stuyvesant Blue</item>
+        <item>Voyager Gold</item>
+        <item>Voyager Green</item>
+        <item>Voyager White</item>
+        <item>Voyager Red</item>
+        <item>Voyager Blue</item>
+        <item>Voyager Siver</item>
+        <item>Voyager Slims </item>
+        <item>Voyager Cherry</item>
+        <item>Dunhill</item>
+        <item>Camel</item>
+        <item>Pallmall</item>
+
+    </string-array>
 </resources>
