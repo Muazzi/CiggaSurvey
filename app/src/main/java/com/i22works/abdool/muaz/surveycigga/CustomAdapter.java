@@ -9,8 +9,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.BaseAdapter;
 import android.widget.CheckBox;
 import android.widget.CheckedTextView;
+import android.widget.ListAdapter;
 import android.widget.TextView;
 
 import com.i22works.abdool.muaz.model.Customer;
@@ -25,12 +27,16 @@ import java.util.List;
 public class CustomAdapter extends ArrayAdapter {
 
     private List<String> brand_names;
+    public   ArrayList<String> choosen_brands = new ArrayList<>();
     Context context;
+    String value;
 
-    public CustomAdapter(@NonNull Context context,List<String>brand_names  ) {
+    public CustomAdapter(@NonNull Context context,List<String>brand_names) {
         super(context,R.layout.row);
+
         this.context=context;
         this.brand_names=brand_names;
+
 
 
     }
@@ -40,10 +46,36 @@ public class CustomAdapter extends ArrayAdapter {
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         LayoutInflater inflater =((Activity)context).getLayoutInflater();
         convertView=inflater.inflate(R.layout.row,parent,false);
-        CheckedTextView textView =(CheckedTextView)convertView.findViewById(R.id.checkbox);
+        choosen_brands = new ArrayList<>();
+        final CheckedTextView textView =(CheckedTextView)convertView.findViewById(R.id.checkbox);
+
+textView.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View v) {
+        if(textView.isChecked())
+        {
+            value = "un-Checked";
+
+            textView.setChecked(false);
+
+            choosen_brands.remove(textView.getText().toString());
+
+        }
+        else
+        {
+            value = "Checked";
+
+
+            textView.setChecked(true);
+          choosen_brands.add(textView.getText().toString());
+
+        }
+    }
+});
+
 
          String name =  brand_names.get(position);
-        Log.i("the name",name);
+
         textView.setText(name);
 
         return  convertView;
@@ -64,4 +96,7 @@ public class CustomAdapter extends ArrayAdapter {
     public long getItemId(int position) {
         return  position;
     }
+
+
+
 }
