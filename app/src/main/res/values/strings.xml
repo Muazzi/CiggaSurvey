@@ -18,4 +18,12 @@
 
     </string-array>
     <string name="title_activity_visability">Visability</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="rep_manger_question">Is the rep known to the manager by name?</string>
+    <string name="kiosk_question">Is the rep known to the kiosk person by name?</string>
+    <string name="GTLC">Is the product layout  as per GLTC guidlines?</string>
+    <string name="spar">Is spar 300 promo implemented?</string>
+    <string name="display_unit">Is display unit implemented?</string>
+    <string name="menthol">Is new menthol poster implemented?</string>
 </resources>

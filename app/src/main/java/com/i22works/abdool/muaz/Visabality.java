@@ -39,7 +39,7 @@ public class Visabality extends AppCompatActivity {
             tv1.setText(phone);
             TextView tv2=new TextView(this);
             Spinner spinner = new Spinner(this);
-            
+
             tv2.setText(amount);
             row.addView(tv1);
             row.addView(tv2);

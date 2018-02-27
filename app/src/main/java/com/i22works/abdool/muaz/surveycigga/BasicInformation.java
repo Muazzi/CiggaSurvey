@@ -57,7 +57,7 @@ private  CustomAdapter adapter;
             Log.d("size", Integer.toString(adapter.choosen_brands.size()));
         }
 
-        Intent intent = new Intent(this, Visabality.class);
+        Intent intent = new Intent(this, StoreInfo.class);
         startActivity(intent);
     }
 }

@@ -16,7 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.i22works.abdool.muaz.Visabality"></activity>
+        <activity android:name="com.i22works.abdool.muaz.Visabality" />
+        <activity android:name=".VisitingInformation" />
+        <activity android:name=".StoreInfo"></activity>
     </application>
 
 </manifest>
