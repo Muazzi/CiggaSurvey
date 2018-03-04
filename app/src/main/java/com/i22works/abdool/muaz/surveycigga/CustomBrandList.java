@@ -24,14 +24,14 @@ import java.util.List;
  * Created by muaz1 on 2018/02/23.
  */
 
-public class CustomAdapter extends ArrayAdapter {
+public class CustomBrandList extends ArrayAdapter {
 
     private List<String> brand_names;
     public   ArrayList<String> choosen_brands = new ArrayList<>();
     Context context;
     String value;
 
-    public CustomAdapter(@NonNull Context context,List<String>brand_names) {
+    public CustomBrandList(@NonNull Context context, List<String>brand_names) {
         super(context,R.layout.row);
 
         this.context=context;

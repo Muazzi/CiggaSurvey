@@ -8,9 +8,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
-import android.widget.Spinner;
-
-import com.i22works.abdool.muaz.Visabality;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -23,7 +20,7 @@ public class BasicInformation extends AppCompatActivity {
    private ListView listView_brands;
     private ArrayList<String> items;
     private ArrayList<String> Chosen_Items;
-private  CustomAdapter adapter;
+private CustomBrandList adapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,7 +35,7 @@ private  CustomAdapter adapter;
 
         List<String> names = Arrays.asList(getResources().getStringArray(R.array.brands));
 
-        adapter = new CustomAdapter(this,names);
+        adapter = new CustomBrandList(this,names);
         listView_brands.setAdapter(adapter);
 
 
@@ -57,7 +54,8 @@ private  CustomAdapter adapter;
             Log.d("size", Integer.toString(adapter.choosen_brands.size()));
         }
 
-        Intent intent = new Intent(this, StoreInfo.class);
+        Intent intent = new Intent(this, Visibility.class);
+        intent.putStringArrayListExtra(constants.CHOSEN_BRANDS,adapter.choosen_brands);
         startActivity(intent);
     }
 }

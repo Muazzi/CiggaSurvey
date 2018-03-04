@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+    <TextView
+        android:id="@+id/availble_name_textfield"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_gravity="center_vertical"
+        android:text="name" >
+    </TextView>
+    <CheckBox
+        android:id="@+id/available"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginLeft="25dp"
+        android:layout_gravity="center_vertical"
+        >
+    </CheckBox>
+
+    <CheckBox
+        android:id="@+id/eye"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginLeft="25dp"
+        android:layout_gravity="center_vertical"
+        >
+    </CheckBox>
+
+
+
+    <CheckBox
+        android:id="@+id/shelf"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginLeft="25dp"
+        android:layout_gravity="center_vertical">
+
+
+    </CheckBox>
+
+
+
+    <CheckBox
+        android:id="@+id/notVisable"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_marginLeft="25dp"
+        android:layout_gravity="center_vertical">
+
+    </CheckBox>
+
+
+
+</LinearLayout>
